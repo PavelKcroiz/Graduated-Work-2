@@ -1,0 +1,324 @@
+/* Reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset.css */
+
+
+
+
+
+
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper p {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 200px;
+} 
+
+header {
+    height: 160px;
+	background-color: #333333;
+	
+}
+
+header .menu {
+    display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+	color: white;
+	font-size: 20px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid red;
+}
+
+header .menu .logo {
+    height: 60px;
+	width: 150px;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+header .menu .navigation {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 50%;
+	margin-left: 10%;
+}
+
+header .menu .navigation li {
+	cursor: pointer;
+}
+
+header .menu span {
+	color: white;
+	text-decoration: none;
+	padding: 10px 8px 0 8px;
+	margin-top: -10px;
+	border: 3px solid white;
+}
+
+header .menu svg{
+	margin-right: -3%;
+}
+
+header .search {
+	margin: 0 auto;
+	width: 35%;
+	height: 50px;
+}
+
+header input {
+	margin-top: 15px;
+	width: 70%;
+	height: 47px;
+	padding-left: 5px;
+	border-radius: 20px 0 0 20px;
+	outline: 0;
+}
+
+header button {
+	height: 47px;
+	margin-left: -4px;
+	border-radius: 0 20px 20px 0;
+	background-color: red;
+	outline: 0;
+	padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+.text {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 7%;
+}
+
+.text h2 {
+	font-size: 28px;
+	margin-bottom: 5%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.text p {
+	column-count: 2;
+	column-gap: 15%;
+	column-width: auto;
+	font-size: 18px;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+.advantages {
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 8%;
+}
+
+.advantages .string {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.advantages .text_adv {
+	margin: 0 30px;
+	width: 45%;
+}
+
+.advantages img {
+	width: 40%;
+	max-height: 300px;
+	margin: 0 30px;
+}
+
+.advantages h3 {
+	font-size: 22px;
+	margin: 7% 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500px;
+}
+
+.advantages p {
+	font-size: 16px;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+.container_products{
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container_products .item{
+    width: 200px;
+    background-color: #333333;
+    color: white;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.container_products .img{
+    height: 200px;
+    background-size: cover;
+    margin: 10px 0;
+    background-position-x: center;
+}
+
+.container_cart{
+	display: none;
+	width: 100%;
+}
+
+.container_cart .item {
+	margin-bottom: 150px;
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.container_cart .img{
+	height: 40vh;
+	width: 100%;
+    background-size: cover;
+    margin: 10px 0;
+    background-position-x: center;
+}
+
+
+.container_cart .name {
+	font-size: 20px;
+	padding: 20px;
+}
+
+.container_cart .price {
+	font-size: 18px;
+	color: red;
+	padding: 10px;
+	border: 2px solid #333;
+}
+
+.container_cart .close{
+	display: block;
+	margin-left: calc(100% - 55px);
+	margin-bottom: 100px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/close_icon.png);
+    background-size: cover;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.cost{
+	margin: 70px 30px 40px 0;
+    text-align: end;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #333333;
+	padding: 40px 0;
+	width: 100%;
+}
+
+footer .icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+footer .icons svg {
+	margin: 0 20px;
+	color: white;
+	
+}
+
+footer span {
+	color: #777777;
+	font-size: 16px;
+}

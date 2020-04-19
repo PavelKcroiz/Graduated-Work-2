@@ -1,0 +1,166 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+}
+
+.wrapper1{
+    max-width: 2560px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.window{
+    height: 90%;
+    max-height: 1200px;
+    width: 40%;
+    background-color: #333333;
+    border-radius: 5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.data{
+    width: 80%;
+    overflow: hidden;
+    font-size: 38px;
+}
+
+.data h1{
+    margin-bottom: 17%;
+    text-align: center;
+    font-size: 60px;
+}
+
+.log_in{
+    margin-bottom: 10%;
+}
+
+.passwd{
+    margin-bottom: 10%;
+}
+
+.icon{
+    display: inline-block;
+    padding-right: 2%;
+}
+
+.desc{
+    display: inline-block;
+    padding-bottom: 1%;
+}
+
+.input{
+    border-bottom: 2px solid #ffffff;
+    font-size: 36px;
+    color: #ffffff;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: transparent;
+    
+}
+
+.btn{
+    text-align: center;    
+    margin-bottom: 10%;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 38px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 3% 10%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: #333333;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+span{
+    display: block;
+    text-align: right;
+    color: #757575;
+    cursor: pointer;
+}
+
+span:hover{
+    color: #ffffff;
+}
+
+@media(max-width:2048px){
+    .window {
+        max-height: 1000px;
+    }
+
+    .data h1 {
+        font-size: 48px;
+    }
+
+    .data {
+        font-size: 32px;
+    }
+
+    .button {
+        font-size: 30px;
+    }
+
+    .input{
+        height: 60px;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1980px){
+    .window {
+        max-height: 900px;
+    }
+
+    .data h1 {
+        font-size: 34px;
+    }
+
+    .data {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+    .input{
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1600px){
+    .window {
+        max-height: 700px;
+    }
+}
+
+@media(max-width:1100px){
+    .window {
+        max-height: 600px;
+        width: 45%;
+    }
+}
